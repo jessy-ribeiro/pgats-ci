@@ -1,0 +1,11 @@
+stages:
+  - test
+
+e2e-tests:
+  stage: test
+
+  image: mcr.microsoft.com/playwright:v1.60.0-noble
+
+  script:
+    - yarn
+    - yarn run e2e
