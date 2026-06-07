@@ -9,3 +9,9 @@ e2e-tests:
   script:
     - yarn
     - yarn run e2e
+
+  artifacts:
+    when: always
+    paths:
+      - allure-results/
+    expire_in: 1 week  
